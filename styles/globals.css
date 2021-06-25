@@ -1,16 +1,135 @@
-html,
-body {
-  padding: 0;
+body, .container, * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: 80px;
+  background-color: #344F77;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 44em;
+  font-size: 22px;
+  width: 10%;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin: 20px 20px;
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
 }
+
+article {
+  margin: 20px 20px;
+  background-color: rgb(10 26 51);
+  padding: 10px;
+  height: 32%;
+  width: 26%;
+}
+
+
+article button {
+  width: 100%;
+  background-color: #21C746;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.categories a{
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  position: relative;
+  top: 70px;
+  color: #438fc5;
+}
+
+aside {
+  width: 170px;
+  position: absolute;
+  top: 5em;
+  background: #f5f5f7;
+  height: 87%;
+  text-align: center;
+}
+
+.categories {
+  position: relative;
+  top: 100px;
+}
+
+.category-item {
+  list-style-type: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.category-item a {
+  color: #f56a07;
+  box-shadow: 0px 2px #888888;
+}
+
+.price-item {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+i {
+  font-size: 28px;
+}
+
+
+.logo {
+  position: absolute;
+  left: 0px;
+  top: -52px;
+  width: 165px;
+  height: 173px;
+  border-radius: 50%;
+}
+
+.pagination {
+  display:  flex;
+  margin: auto;
+  width: 400px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px;
+  text-decoration: none;
+  width: 150px;
+  background-color: #e2dad9;
+}
+
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
